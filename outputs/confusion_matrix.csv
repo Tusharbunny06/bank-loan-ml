@@ -1,0 +1,5 @@
+﻿actual,predicted,count,label
+Repaid,Repay,4425,Correctly approved
+Repaid,Default,640,Wrongly rejected
+Defaulted,Repay,195,Missed default
+Defaulted,Default,1223,Caught default

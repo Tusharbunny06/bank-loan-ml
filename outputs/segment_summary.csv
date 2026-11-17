@@ -1,0 +1,4 @@
+﻿segment_id,segment,customers,share_%,avg_age,median_income,avg_loan,avg_int_rate,avg_loan_pct_income,avg_cred_history,avg_grade,prior_default_share,default_rate
+1,Young Prime Borrowers,18351,56.6,25.3088,53155.0,8707.8742,9.4782,0.165,4.2128,1.623,0.0,0.1427
+2,Established Borrowers,5909,18.2,36.6373,69000.0,10716.2887,10.4795,0.1548,11.7566,1.9819,0.067,0.1394
+3,High-Risk Borrowers,8151,25.1,26.5121,53000.0,10642.9733,14.8831,0.1933,5.0287,3.7386,0.6544,0.4474

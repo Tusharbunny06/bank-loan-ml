@@ -1,0 +1,13 @@
+﻿step,issue,rows_affected,treatment
+3.1 Duplicates,Exact duplicate rows,165,Dropped (kept first occurrence)
+3.2 Impossible values,Age above 100,4,Rows dropped
+3.2 Impossible values,Employment length > age - 14 (e.g. 123 years),2,"Set to missing, then imputed in 3.3"
+3.3 Missing values,person_emp_length missing or invalid -> indicator column,889,Added emp_length_missing flag (missingness is linked to default)
+3.3 Missing values,loan_int_rate missing,3094,Imputed with group_median (best of 5 on a masked test)
+3.3 Missing values,person_emp_length missing,889,Imputed with iterative (best of 5 on a masked test)
+3.4 Outliers,person_income extreme values,638,winsorized at 1st/99th percentile
+3.4 Outliers,loan_amnt extreme values,335,winsorized at 1st/99th percentile
+3.4 Outliers,person_age extreme values,244,capped at 3 x IQR fence
+3.4 Outliers,person_emp_length extreme values,52,capped at 3 x IQR fence
+3.4 Outliers,cb_person_cred_hist_length extreme values,148,capped at 3 x IQR fence
+3.5 Skewness,Right-skewed income and loan amount,32411,"log1p transform -> person_income_log, loan_amnt_log"
